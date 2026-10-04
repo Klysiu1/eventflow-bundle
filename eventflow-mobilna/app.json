@@ -1,0 +1,43 @@
+{
+  "expo": {
+    "name": "EventFlow Organizer",
+    "slug": "eventflow-mobilna",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/app-icon.png",
+    "userInterfaceStyle": "dark",
+    "scheme": "eventflow-mobilna",
+    "backgroundColor": "#090f13",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "pl.eventflow.attendee"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#090f13",
+        "foregroundImage": "./assets/app-foreground.png",
+        "monochromeImage": "./assets/app-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": true,
+      "package": "pl.eventflow.attendee"
+    },
+    "web": {
+      "favicon": "./assets/app-icon.png",
+      "bundler": "metro",
+      "name": "EventFlow Organizer",
+      "output": "single"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-font",
+      [
+        "expo-notifications",
+        {
+          "color": "#50cbed",
+          "defaultChannel": "plan"
+        }
+      ],
+      "expo-sharing"
+    ]
+  }
+}

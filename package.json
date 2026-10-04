@@ -1,0 +1,16 @@
+{
+  "name": "eventflow-bundle",
+  "version": "1.0.0",
+  "description": "EventFlow full-stack suite: Laravel API, React Web, and Expo Mobile",
+  "scripts": {
+    "start": "cmd /c start.bat",
+    "start:ps1": "powershell -ExecutionPolicy Bypass -File ./start.ps1",
+    "stop": "cmd /c stop.bat",
+    "install:all": "powershell -ExecutionPolicy Bypass -File ./start.ps1 -OnlyInstall",
+    "dev:backend": "cd \"eventflow server\" && php artisan dev",
+    "dev:web": "cd eventflow-webowe && npm run dev",
+    "dev:mobile": "cd eventflow-mobilna && npx expo start"
+  },
+  "author": "",
+  "license": "ISC"
+}

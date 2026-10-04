@@ -1,0 +1,82 @@
+# Dependencies
+node_modules/
+**/node_modules/
+vendor/
+**/vendor/
+
+# Environment files
+.env
+**/.env
+.env.local
+**/.env.local
+.env.*.local
+**/.env.*.local
+.env.backup
+.env.production
+!.env.example
+!**/.env.example
+
+# Laravel Backend
+eventflow server/storage/*.key
+eventflow server/storage/pail
+eventflow server/storage/framework/cache/data/*
+eventflow server/storage/framework/sessions/*
+eventflow server/storage/framework/views/*
+eventflow server/storage/logs/*
+!eventflow server/storage/logs/.gitignore
+!eventflow server/storage/framework/cache/.gitignore
+!eventflow server/storage/framework/sessions/.gitignore
+!eventflow server/storage/framework/views/.gitignore
+eventflow server/database/*.sqlite
+eventflow server/database/*.sqlite-journal
+eventflow server/public/hot
+eventflow server/public/storage
+eventflow server/public/build
+eventflow server/public/fonts-manifest.dev.json
+.phpunit.result.cache
+**/.phpunit.result.cache
+
+# Mobile App & Expo
+.expo/
+**/.expo/
+expo-env.d.ts
+**/.kotlin/
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+.metro-health-check*
+ios/
+android/
+web-build/
+
+# Frontend Web Build
+dist/
+**/dist/
+
+# Logs & Temporary Files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+lerna-debug.log*
+*.log
+*.tmp
+
+# TypeScript & Cache
+*.tsbuildinfo
+.eslintcache
+
+# OS & Editor
+.DS_Store
+Thumbs.db
+desktop.ini
+*.lnk
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
