@@ -19,6 +19,10 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
+        if (Event::count() > 0) {
+            return;
+        }
+
         // 1. Users
         $admin = User::create([
             'name' => 'Administrator Systemu',

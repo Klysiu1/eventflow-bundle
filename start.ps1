@@ -125,6 +125,7 @@ if (-not $SkipInstall) {
         cmd.exe /c "composer install --no-interaction"
         if ($LASTEXITCODE -ne 0) { throw "Błąd podczas composer install" }
         php artisan migrate --force
+        php artisan db:seed --force
         cmd.exe /c "npm.cmd install --no-audit --no-fund"
     } finally {
         Pop-Location
